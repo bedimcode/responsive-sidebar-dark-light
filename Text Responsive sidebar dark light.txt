@@ -1,0 +1,25 @@
+========== HEADER ==========
+.header__logo span
+Cloud
+
+========== SIDEBAR ==========
+.sidebar__info h3 span
+Rix Methil
+rix123@email.com
+
+.sidebar__title .sidebar__link
+MANAGE
+ Dashboard
+ My Wallet
+ Calendar
+ Recent Transactions
+ Statistics
+
+SETTINGS
+ Settings
+ My Messages
+ Notifications
+
+.sidebar__actions
+Theme
+Log Out
