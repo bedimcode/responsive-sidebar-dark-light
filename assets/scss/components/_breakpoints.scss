@@ -1,0 +1,95 @@
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+@media screen and (max-width: 360px){
+   .header__container{
+      padding-inline: 1rem;
+   }
+
+   .sidebar{
+      width: max-content;
+
+      &__info,
+      &__link span{
+         display: none;
+      }
+      &__user,
+      &__list,
+      &__actions{
+         justify-content: center;
+      }
+      &__user,
+      &__link{
+         grid-template-columns: max-content;
+      }
+      &__user{
+         padding: 0;
+      }
+      &__link{
+         padding-inline: 2rem;
+      }
+      &__title{
+         padding-inline: .5rem;
+         margin-inline: auto;
+      }
+   }
+}
+
+/* For large devices */
+@media screen and (min-width: 1150px){
+   .header{
+      margin: 1rem;
+      padding-left: 340px;
+      transition: padding .4s;
+
+      &__container{
+         height: calc(var(--header-height) + 2rem);
+         padding-inline: 2rem;
+      }
+      &__logo{
+         order: 1;
+      }
+   }
+
+   .sidebar{
+      left: 0;
+      width: 316px;
+      margin: 1rem;
+
+      &__info,
+      &__link span{
+         transition: opacity .4s;
+      }
+      &__user,
+      &__title{
+         transition: padding .4s;
+      }
+   }
+   
+   /* Reduce sidebar */
+   .show-sidebar{
+      width: 90px;
+
+      & .sidebar__user{
+         padding-left: 1.25rem;
+      }
+      & .sidebar__title{
+         padding-left: 0;
+         margin-inline: auto;
+      }
+      & .sidebar__info,
+      & .sidebar__link span{
+         opacity: 0;
+      }
+   }
+
+   .main{
+      padding-left: 340px;
+      padding-top: 8rem;
+      transition: padding .4s;
+   }
+
+   /* Add padding left */
+   .left-pd{
+      padding-left: 114px;
+   }
+}
